@@ -235,6 +235,8 @@ footer{
     padding: 50px 125px;
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
                 url(../img/banner2.jpg);
+}
+footer .topfoot, footer .bottomfooter{
     display: flex;
     justify-content: space-between;
 }
@@ -254,5 +256,15 @@ footer ul li a{
 footer ul li a span{
     color: #fff;
     font-weight: 500;
+}
+footer .international div{
+    display: flex;
+    justify-content: space-between;
+}
+footer .international div .inter1{
+    margin-right: 50px;
+}
+footer .bottomfooter .footmenu ul li{
+    display: inline-block;
 }
 /* footer section end */

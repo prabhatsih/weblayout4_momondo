@@ -64,8 +64,9 @@ header ul li a.active{
 .banner form{
     width: 84%;
     bottom: 50px;
-    height: 100px;
+    height: auto;
     display: flex;
+    justify-content: space-between;
     padding: 2px 8px;
     position: absolute;
     align-items: center;
@@ -90,7 +91,7 @@ header ul li a.active{
 }
 .banner form .searchForm input,
 .banner form .searchForm select{
-    width: 200px;
+    width: 18%;
     height: 35px;
     margin-right: 5px
 }
@@ -268,3 +269,91 @@ footer .bottomfooter .footmenu ul li{
     display: inline-block;
 }
 /* footer section end */
+
+/* Media Query Section Start */
+@media screen and (max-width:1199px) {
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .banner form {
+        width: 86%;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        width: 17%;
+    }
+    .banner form button.smt {
+        float: right !important;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .fun ul li {
+        width: 105px;
+        height: 115px;
+        font-size: 35px;
+    }
+    .blog-content {
+        display: block;
+    }
+    footer .topfoot .left,
+    footer .topfoot .right{
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px){
+    header,.banner,
+    .fun, .newslatter,
+    .destination, .estimate,
+    .blog, footer{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    header .nav{
+        display: none;
+    }
+    .banner form {
+        width: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        left: 25%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+    .banner form .searchForm input, 
+    .banner form .searchForm select {
+        display: block;
+        width: 100%;
+    }
+    .banner form .searchForm span{
+        display: none;
+    }
+    .banner form button.smt {
+        width: 280px;
+        height: 35px;
+        border-radius: 0px;
+        margin: 10px auto;
+    }
+    .fun ul {
+        margin-left: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 130px 130px;
+        grid-gap: 10px;
+    }
+    .destination ul {
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: 400px 400px 400px 400px;
+    }
+}
+@media screen and (max-width:575px){
+    
+}
+/* Media Query Section End */
